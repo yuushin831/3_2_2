@@ -49,15 +49,14 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	Enemy* enemy2 = new Enemy;
 	Enemy* enemy3 = new Enemy;
 
+	
 	cout << Enemy::DethFlag << endl;
 
-	delete enemy1;
+	
 
 	cout << Enemy::DethFlag << endl;
-	delete enemy2;
-	delete enemy3;
+	
 	cout << Enemy::DethFlag << endl;
-
 	// 最新のキーボード情報用
 	char keys[256] = { 0 };
 
@@ -99,6 +98,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 			DrawBox(240, 0, 300, 60, GetColor(255, 255, 255), true);
 		}
 
+		
+		
 		//---------  ここまでにプログラムを記述  ---------//
 		// (ダブルバッファ)裏面
 		ScreenFlip();
@@ -120,5 +121,11 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	DxLib_End();
 
 	// 正常終了
+	delete enemy1;
+
+	delete enemy2;
+	delete enemy3;
+
+
 	return 0;
 }
