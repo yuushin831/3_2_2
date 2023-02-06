@@ -88,15 +88,15 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		// 描画処理
 		if (!enemy1->DethFlag)
 		{
-			DrawBox(0, 0, 60, 60, GetColor(255, 0, 0), true);
+			DrawBox(0, 0, 60, 60, GetColor(255, 255, 255), true);
 		}
 		if (!enemy2->DethFlag)
 		{
-			DrawBox(120, 0, 180, 60, GetColor(255, 0, 0), true);
+			DrawBox(120, 0, 180, 60, GetColor(255, 255, 255), true);
 		}
 		if (!enemy3->DethFlag)
 		{
-			DrawBox(240, 0, 300, 60, GetColor(255, 0, 0), true);
+			DrawBox(240, 0, 300, 60, GetColor(255, 255, 255), true);
 		}
 
 		//---------  ここまでにプログラムを記述  ---------//
